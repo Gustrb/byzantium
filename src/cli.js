@@ -22,7 +22,7 @@ function getArgument() {
  * Returns the content of the file to be parsed, if no argument is passed.
  * An argument is passed when the user calls the CLI with a file to be parsed.
  * If no argument is passed, we should look at current directory for a file
- * called byzantium.json or byzantium.js
+ * called or byzantium.js
  * @returns {Promise<{ filepath: string, content: string }>} the content of the file to be parsed
  */
 function getConfigFileContent() {
@@ -37,7 +37,7 @@ function getConfigFileContent() {
 /**
  * This function is responsible for loading the file to be parsed, a file to be parsed is:
  * - a file passed as argument to the CLI
- * - a file called byzantium.json or byzantium.js at current directory
+ * - a file called byzantium.json at current directory
  *
  * @throws {InvalidUsageException} if no file is found
  * @param {string|undefined} argument is the first argument passed to the CLI (undefined if no argument is passed) 
