@@ -12,7 +12,7 @@
  * This is the list of supported file extensions
  */
 const SUPPORTED_EXTENSIONS = [ 'json' ]
-const SUPPORTED_KEY = [ 'eslint' ];
+const SUPPORTED_KEY = [ 'eslint', 'prettier' ];
 
 /**
  * This is the exception thrown when the file extension is not supported
